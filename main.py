@@ -2,7 +2,7 @@ import json
 import csv
 
 with open("studentsperformance.json") as json_file:
-	data=json.load(json_file)#fetching the data in json file into dataframe(data)
+	data=json.load(json_file)
 csv_file = open('output.csv', 'w', newline='') 
 csv_writer = csv.writer(csv_file)
 header = data.keys()
